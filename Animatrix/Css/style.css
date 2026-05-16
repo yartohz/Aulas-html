@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+
+body {
+    background-color: #f9f3dc;
+    color: #f9f3dc;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ea381d;
+
+}
+
+header h1{
+    font-size: 2rem;
+    color: #ff0055;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.version-badge {
+    background-color: #d8a984;
+    color: #ff660e;
+    padding: 2px 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+header p {
+
+    color: #787c99;
+    margin-top: 5px;
+
+}
+
+.controle-de-idade{
+    margin-top: 20px;
+    background-color: #ea381d;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.controle-de-idade label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.controle-de-idade input{
+    background-color: #db6a59;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    width: 70px;
+    text-align: center;
+
+}
+
+.controle-de-idade button {
+
+    background-color: #db6a59;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor:pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.controle-de-idade button:hover{
+    background-color: #db6a59;
+}
+
+.catalogo-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.anime-card {
+    background-color: #1a1b26;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #24283b;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-high-rating {
+    border-color: #00ffcc;
+}
+
+.card-standard-rating {
+    border-color: #414868;
+}
+
+.anime-card.premium {
+    background: linear-gradient(145deg, #1a1b26, #241b35);
+    box-shadow: 0 0 20px rgba(157, 0, 255, 0.3);
+    border: 2px solid #9d00ff;
+    position: relative;
+}
+
+.anime-card.premium::before {
+    content: "★ DESTAQUE PREMIUM ★";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #9d00ff;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+
+.card-media {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.card-media img, .card-media iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.badge-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.badge-genre { background-color: #414868; color: #c0caf5; }
+.badge-rating { background-color: #e0af68; color: #1a1b26; }
+.badge-censorship { background-color: #f7768e; color: #fff; }
+.badge-episodes { background-color: #7aa2f7; color: #1a1b26; }
+
+.card-summary {
+    color: #a9b1d6;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.card-trivia {
+    background-color: #24283b;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid #00ffcc;
+    font-size: 0.85rem;
+}
+
+.card-trivia strong {
+    color: #00ffcc;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.restricted-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 17, 26, 0.95);
+    color: #f7768e;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 3;
+    padding: 20px;
+}
+
+.anime-card.restricted .card-media img,
+.anime-card.restricted .card-media iframe,
+.anime-card.restricted .card-summary {
+    filter: blur(12px);
+    pointer-events: none;
+}
+
+.anime-card.restricted .restricted-overlay {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5px;
+    padding: 20px;
+    color: #565f89;
+    font-size: 0.85rem;
+}

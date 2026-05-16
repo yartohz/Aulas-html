@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animatrix</title>
+    <link rel="stylesheet" href="/Animatrix/Css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <img src="/Animatrix/img/Anima.png" width="150px" alt="">
+            <h1>Animatrix v2 - Catalogo para Animes<span class="version-badge">v2</span></h1>
+        </div>
+
+        <div class="controle-de-idade">
+            <label for="idade-usuario">Coloque sua idade para ter o acesso: </label>
+            <input type="number" id="idade-usuario" value="18" min="18" max="120">
+            <button id="btn-update-idade">Atualizar o Catálogo</button>
+        </div>
+    </header>
+    <main>
+        <section id="anime-catalogo" class="catalogo-grid"></section>
+    </main>
+    <footer>
+        <p>&copy; 2026- Desenvolvimento Web Front-End| Professor Heber Castro</p>
+    </footer>
+
+    <script src="/Animatrix/Js/data.js"></script>
+</body>
+</html>
