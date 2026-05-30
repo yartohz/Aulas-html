@@ -1,0 +1,61 @@
+
+body{
+
+    font-family: Arial;
+    background:#202124;
+    color:white;
+
+    padding:30px;
+}
+
+.formulario{
+
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+
+    margin-bottom:20px;
+}
+
+input,
+select,
+button{
+
+    padding:10px;
+}
+
+#cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.card{
+
+    background:#2d2f31;
+
+    padding:15px;
+
+    border-radius:8px;
+}
+
+.critico{
+
+    border:3px solid red;
+
+    animation:piscando 1s infinite;
+}
+
+@keyframes piscando{
+
+    50%{
+
+        opacity:0.5;
+    }
+}

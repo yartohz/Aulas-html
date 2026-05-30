@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Sentinel Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>IoT Sentinel Pro</h1>
+
+    <section class="formulario">
+
+        <input type="text" id="nome" placeholder="Nome do Sensor">
+
+        <select id="tipo">
+            <option value="TEMPERATURA">Temperatura</option>
+            <option value="PRESSAO">Pressão</option>
+            <option value="UMIDADE">Umidade</option>
+        </select>
+
+        <input type="number" id="valor" placeholder="Valor">
+
+        <button id="btnCadastrar">
+            Cadastrar Sensor
+        </button>
+
+    </section>
+
+    <section>
+
+        <h2>Média Geral:</h2>
+
+        <p id="media">
+            0
+        </p>
+
+    </section>
+
+    <section id="cards">
+
+    </section>
+
+    <canvas id="grafico"></canvas>
+
+<script src="v.js"></script>
+
+
+
+
+
+</body>
+</html>
