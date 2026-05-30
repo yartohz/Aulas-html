@@ -1,61 +1,38 @@
-
-body{
-
-    font-family: Arial;
-    background:#202124;
-    color:white;
-
-    padding:30px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
 }
 
-.formulario{
-
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-
-    margin-bottom:20px;
+.container {
+    max-width: 400px;
 }
 
-input,
-select,
-button{
-
-    padding:10px;
+label {
+    display: block;
+    margin-top: 10px;
 }
 
-#cards{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:15px;
-
-    margin-top:20px;
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
 }
 
-.card{
-
-    background:#2d2f31;
-
-    padding:15px;
-
-    border-radius:8px;
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
-.critico{
-
-    border:3px solid red;
-
-    animation:piscando 1s infinite;
+button:hover {
+    background-color: #f0f0f0;
 }
 
-@keyframes piscando{
-
-    50%{
-
-        opacity:0.5;
-    }
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 50px;
+    border-radius: 5px;
 }
