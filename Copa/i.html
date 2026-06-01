@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Figurinhas Copa 2026</title>
+    <link rel="stylesheet" href="/Copa/css/s.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gestor de Figurinhas 🏆</h2>
+        
+        <div class="campo">
+            <label for="inputTotal">Total de Figurinhas do Álbum:</label>
+            <input type="number" id="inputTotal" placeholder="Ex: 670">
+        </div>
+
+        <div class="campo">
+            <label for="inputColadas">Figurinhas Já Coladas:</label>
+            <input type="number" id="inputColadas" placeholder="Ex: 150">
+        </div>
+
+        <div class="campo">
+            <label for="inputRepetidas">Figurinhas Repetidas:</label>
+            <input type="number" id="inputRepetidas" placeholder="Ex: 25">
+        </div>
+
+        <button onclick="atualizarPainel()">Calcular Progresso</button>
+
+        <div id="painelResultado" style="display: none;"></div>
+    </div>
+    <script src="/Copa/css/js/v.js"></script>
+</body>
+</html>
