@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário Arcano de Valdrik</title>
+    <!-- Conectando a Aparência -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mochila Infinita de JavaScript</h1>
+        <!-- Painel para o Requisito 2.3 -->
+        <p id="painel-janela">Resolução Atual: <span id="resolucao">Calculando...</span></p>
+    </header>
+
+    <main>
+        <!-- Requisito 2.1: Formulário de Compras -->
+        <section id="loja">
+            <h2>Comprar Novo Item</h2>
+            <form id="form-item">
+                <input type="text" id="input-nome" placeholder="Nome do Item" required>
+                <input type="number" id="input-preco" placeholder="Preço em Ouro" required>
+                <input type="text" id="input-categoria" placeholder="Categoria (ex: Poções)" required>
+                <input type="number" id="input-qtd" placeholder="Quantidade" required>
+                <button type="submit">Guardar na Mochila</button>
+            </form>
+        </section>
+
+        <!-- Requisitos 3 e 4: Feitiços e Controles -->
+        <section id="controles-magicos">
+            <button id="btn-pechincha">Pechincha Arcana (-10%)</button>
+            <button id="btn-filtro-pocoes">Visão Alquímica (Só Poções)</button>
+            <button id="btn-contar-ouro">Contar Ouro</button>
+            <p id="mensagem-ouro"></p>
+        </section>
+
+        <!-- Requisito 3.1: Esteira Mágica -->
+        <section>
+            <h2>Itens na Mochila</h2>
+            <div id="mochila-exibicao">
+                <!-- As cartas dos itens vão aparecer aqui via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Conectando as Magias antes de fechar o body -->
+    <script src="script.js"></script>
+</body>
+</html>
