@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Frota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gestor de Frota - Concessionária Digital</h1>
+
+    <div class="formulario">
+        <input type="text" id="marca" placeholder="Marca" onkeyup="atualizarPreview()">
+
+        <input type="text" id="modelo" placeholder="Modelo">
+
+        <input type="number" id="ano" placeholder="Ano">
+
+        <p>Preview da Marca: <span id="preview">---</span></p>
+
+        <button onclick="fabricarCarro()">
+            Fabricar Carro
+        </button>
+    </div>
+
+    <h2>Pátio de Veículos</h2>
+
+    <div id="patio"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
