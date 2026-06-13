@@ -1,0 +1,108 @@
+body{
+    background:#1a1a1a;
+    color:white;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.titulo{
+    color:#00e5ff;
+    font-weight:bold;
+    margin-bottom:30px;
+    text-shadow:0 0 15px #00e5ff;
+}
+
+.painel{
+    background:#252525;
+    border:1px solid #333;
+    box-shadow:0 0 20px rgba(0,229,255,.2);
+}
+
+.displayPressao{
+    text-align:center;
+    margin-top:20px;
+}
+
+#valorPressao{
+    font-size:70px;
+    font-weight:bold;
+    color:#00ff88;
+    text-shadow:0 0 20px #00ff88;
+    transition:0.5s;
+}
+
+.progress{
+    height:30px;
+}
+
+.progress-bar{
+    transition:1s;
+}
+
+.offline{
+    color:red !important;
+    text-shadow:0 0 20px red !important;
+}
+
+.online{
+    color:#00ff88 !important;
+}
+
+.painel{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.card-header{
+    background:#111827;
+    border-bottom:2px solid #00e5ff;
+}
+
+.card-header h2{
+    color:#00e5ff;
+    margin-bottom:5px;
+}
+
+.card-header p{
+    color:#94a3b8;
+}
+
+.indicadores{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.indicador{
+    text-align:center;
+}
+
+.manometro{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.displayPressao p{
+    color:#94a3b8;
+    letter-spacing:2px;
+    margin-top:10px;
+}
+
+.status-operacao{
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.normal{
+    color:#22c55e;
+}
+
+.alerta{
+    color:#f59e0b;
+}
+
+.critico{
+    color:#ef4444;
+}
