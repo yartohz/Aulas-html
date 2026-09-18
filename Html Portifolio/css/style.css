@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: chartreuse;
+}
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1040;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-matrix-wrapper {
+    background-color: transparent!important;
+    height: 38px;
+    min-width: 175px;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.matrix-box {
+    display: inline-flex;
+    align-items: center;
+    height: 38px;
+    background-color: black;
+    color: chartreuse;
+    border: 2px solid chartreuse;
+    box-shadow: 0 0 10px rgba( 0, 255 , 65, 0.4);
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.8);
+    padding: 0 12px;
+    position: relative;
+}
+
+.cursor{
+    animation: cursor-blink 0.6s infinite alternative;
+    margin-left: 2px;
+} 
+
+@keyframes cursor-blink{ 
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.glitch-active{
+    animation: premiere-slice 0.15s infinite linear alternate reverse !important;
+    text-shadow:-3px 0 #ffff, 3px 0 #FF0055, #00ff41 !important;
+    border-color: #FF0055 !important;
+}
+@keyframes premire-slice {
+    0%{transform: translate(-3px, 1px)skewX(10deg);}
+    50%{transform: translate(3px, -1px)skewX(-12deg);}
+    100%{transform: translate(-2px, 2px)skewX(8deg)}
+}
+
+
+.fake-cursor{
+    position: absolute;
+    width: ;
+    height: ;
+    bottom: ;
+    right: ;
+    z-index: ;
+    pointer-events: ;
+    transition: ;
+}
+
+.xp-window{
+    background-color: ;
+    border: ;
+    border-radius: ;
+    box-shadow: ;
+    max-width: ;
+    overflow: hidden;
+    transform: ;
+    opacity: ;
+    transform-origin: ;
+    transition: ;
+
+}
+
+.xp-window .open{
+    background: ;
+    color: ;
+    text-shadow: ;
+}
+
+.xp-title-bar{
+    
+}
+
+.xp-btn {
+
+}
+
+.xp-btn.close{
+
+}
+
+.xp-left{
+
+}
+
+.history-scroll{
+
+}
+
+.history-scroll::-webkit-scrollbar{
+
+}
+
+.arccordion-item{
+
+}
+
+.arccordion-button{
+
+}
+
+.arccordion-button:not(){
+
+}
+
+.arccordion-button::after{
+
+}
+
+.arccordion-button:not{
+
+}
+
